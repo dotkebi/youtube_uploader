@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: shinkim
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+
+  devtools:
+    restart:
+      exclude: static/**
+      enabled: true
+    livereload:
+      enabled: true
+  http:
+    multipart:
+      max-file-size: 30Mb
+      max-request-size: 30Mb
+      location: ./
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    content-type: text/html
+  messages:
+    cache-seconds: 1
+
+security:
+  basic:
+    enabled: false
+
+server:
+  port: 8080
+
+youtube:
+  user: dotkebi@gmail.com
